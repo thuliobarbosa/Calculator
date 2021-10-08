@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <table>
+                <tbody>
+                    <p id="result"></p>
+                    <tr>
+                        <td><button onclick="clearDisplay()"> C </button></td>
+                        <td><button onclick="back()"> < </button></td>
+                        <td><button onclick="setDisplay('/')"> / </button></td>
+                        <td><button onclick="setDisplay('*')"> x </button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="setDisplay('7')"> 7 </button></td>
+                        <td><button onclick="setDisplay('8')"> 8 </button></td>
+                        <td><button onclick="setDisplay('9')"> 9 </button></td>
+                        <td><button onclick="setDisplay('-')"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="setDisplay('4')"> 4 </button></td>
+                        <td><button onclick="setDisplay('5')"> 5 </button></td>
+                        <td><button onclick="setDisplay('6')"> 6 </button></td>
+                        <td><button onclick="setDisplay('+')"> + </button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="setDisplay('1')"> 1 </button></td>
+                        <td><button onclick="setDisplay('2')"> 2 </button></td>
+                        <td><button onclick="setDisplay('3')"> 3 </button></td>
+                        <td rowspan="2"><button class="rowspan" id="equals"> = </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="colspan" onclick="setDisplay('0')"> 0 </button></td>
+                        <td><button onclick="setDisplay('.')"> . </button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <script src="script.js"></script>
+
+        </div>
+    </div>
+</body>
+</html>
